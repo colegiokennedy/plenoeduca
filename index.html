@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pleno Educa | CEANSA</title>
+  <meta name="description" content="Pleno Educa — Centro Educacional e Assistencial Nossa Senhora Aparecida. Fortalecendo escolas. Transformando futuros." />
+  <style>
+    :root {
+      --azul: #075a9c;
+      --verde: #44ad2d;
+      --laranja: #f49a1d;
+      --cinza: #59616d;
+      --claro: #f7fbff;
+      --branco: #ffffff;
+      --sombra: 0 12px 30px rgba(0,0,0,.08);
+      --raio: 22px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1f2933;
+      background: var(--claro);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--branco);
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav {
+      max-width: 1120px;
+      margin: auto;
+      padding: 14px 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .nav img { height: 62px; max-width: 230px; object-fit: contain; }
+    .nav a {
+      color: var(--azul);
+      text-decoration: none;
+      margin-left: 18px;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .hero {
+      background: linear-gradient(135deg, rgba(7,90,156,.95), rgba(68,173,45,.9));
+      color: white;
+      padding: 82px 22px;
+    }
+    .hero-wrap {
+      max-width: 1120px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.05;
+      margin: 0 0 18px;
+    }
+    .hero p { font-size: 20px; max-width: 680px; }
+    .hero-card {
+      background: white;
+      border-radius: var(--raio);
+      padding: 26px;
+      text-align: center;
+      box-shadow: var(--sombra);
+    }
+    .hero-card img { width: 100%; max-width: 430px; }
+    .btn {
+      display: inline-block;
+      margin-top: 18px;
+      background: var(--laranja);
+      color: white;
+      padding: 13px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+    }
+    section { max-width: 1120px; margin: auto; padding: 60px 22px; }
+    h2 { color: var(--azul); font-size: 32px; margin-top: 0; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .card {
+      background: white;
+      padding: 26px;
+      border-radius: var(--raio);
+      box-shadow: var(--sombra);
+      border-top: 5px solid var(--verde);
+    }
+    .card:nth-child(2) { border-top-color: var(--azul); }
+    .card:nth-child(3) { border-top-color: var(--laranja); }
+    .card h3 { margin-top: 0; color: var(--azul); }
+    .info {
+      background: white;
+      border-radius: var(--raio);
+      padding: 28px;
+      box-shadow: var(--sombra);
+    }
+    .tag {
+      display: inline-block;
+      background: rgba(68,173,45,.12);
+      color: var(--verde);
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .contact {
+      background: linear-gradient(135deg, #ffffff, #eef8ff);
+      border-radius: var(--raio);
+      padding: 34px;
+      box-shadow: var(--sombra);
+    }
+    footer {
+      background: #12324f;
+      color: white;
+      text-align: center;
+      padding: 28px 18px;
+      font-size: 14px;
+    }
+    @media (max-width: 820px) {
+      .hero-wrap, .cards { grid-template-columns: 1fr; }
+      .nav { flex-direction: column; }
+      .nav a { margin: 0 8px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <img src="assets/logo-pleno-educa.png" alt="Logotipo Pleno Educa" />
+      <nav aria-label="Menu principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#atuacao">Atuação</a>
+        <a href="#institucional">Institucional</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-wrap">
+        <div>
+          <span class="tag">CEANSA</span>
+          <h1>Pleno Educa</h1>
+          <p><strong>Fortalecendo escolas. Transformando futuros.</strong></p>
+          <p>Iniciativa do Centro Educacional e Assistencial Nossa Senhora Aparecida, voltada à educação, assistência social, promoção da dignidade humana e apoio ao desenvolvimento de comunidades escolares.</p>
+          <a class="btn" href="#contato">Conheça nosso trabalho</a>
+        </div>
+        <div class="hero-card">
+          <img src="assets/logo-pleno-educa.png" alt="Pleno Educa - Fortalecendo escolas. Transformando futuros." />
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre a instituição</h2>
+      <div class="info">
+        <p> O CEANSA - CENTRO EDUCACIONAL E ASSISTENCIAL NOSSA SENHORA APARECIDA mantém o projeto PLENO EDUCA que tem por finalidade promover, criar, instalar, e manter estabelecimentos de ensino, que atuem na educação formal e livre, além de criar e manter outras atividades de caráter assistencial, de forma a elevar o padrão educacional e efetivar providências no sentido de tornar o ensino mais adequado aos interesses e possibilidades da comunidade escolar. 
+		<p> Também tem por finalidade promover a assistência social, visando ao bem-estar e à dignidade de indivíduos e grupos em situação de vulnerabilidade social, econômica e emocional por meio de suas ações bem como desenvolver ações nas áreas da saúde, cultura, esporte, segurança alimentar e promoção dos direitos humanos, de acordo com as políticas públicas e os princípios da universalidade, gratuidade e equidade.</p>	
+      </div>
+    </section>
+
+    <section id="atuacao">
+      <h2>Áreas de atuação</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Educação</h3>
+          <p>Promoção, criação, instalação e manutenção de estabelecimentos de ensino, com atuação na educação formal e livre.</p>
+        </div>
+        <div class="card">
+          <h3>Assistência Social</h3>
+          <p>Ações voltadas ao bem-estar e à dignidade de indivíduos e grupos em situação de vulnerabilidade social, econômica e emocional.</p>
+        </div>
+        <div class="card">
+          <h3>Desenvolvimento Humano</h3>
+          <p>Projetos nas áreas de saúde, cultura, esporte, segurança alimentar e promoção dos direitos humanos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="institucional">
+      <h2>Dados institucionais</h2>
+      <div class="info">
+        <p><strong>Razão social:</strong> CEANSA — Centro Educacional e Assistencial Nossa Senhora Aparecida</p>
+        <p><strong>Nome fantasia:</strong> Pleno Educa</p>
+        <p><strong>Princípios:</strong> universalidade, gratuidade, equidade, respeito à diversidade e valorização da dignidade humana.</p>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="contact">
+        <h2>Contato</h2>
+        <p><strong>E-mail:</strong> contato@plenoeduca.com</p>
+        <p><strong>Endereço:</strong> Porto Alegre/RS</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Pleno Educa — CEANSA. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
